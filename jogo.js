@@ -2,8 +2,8 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-
 var tempo = 30
+
 var criaMosquitoTempo = 1500
 
 var nivel = window.location.search
@@ -19,21 +19,7 @@ criaMosquitoTempo = 1000
 }else if(nivel === 'chucknorris'){
 //750 milisegundo
 criaMosquitoTempo = 750
-}
 
-var temp = window.location.search
-temp = temp.replace('?','')
-
-if (temp=== 't1'){
-//15 segundos
-tempo = 15
-}else if(temp === 't2'){
-//30 segundos
-tempo = 30
-
-}else if(temp === 't3'){
-//60 segundos
-tempo = 60
 }
 
 function ajustaTamanhoPalcoJogo() {

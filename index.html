@@ -11,20 +11,13 @@
     <script>
         function iniciarJogo(){
             var nivel = document.getElementById('nivel').value
-            var temp = document.getElementById('temp').value
 
             if (nivel === ''){
                 alert('Selecione um nível para iniciar o jogo')
                 return false
             }
-            if (temp === ''){
-                alert('Selecione um tempo para iniciar o jogo')
-                return false
-            }
-            window.location.href = 'app.html?'+ temp
+            window.location.href = 'app.html?'+ nivel
         }
-        
-        
     </script>
 
 </head>
@@ -47,20 +40,6 @@
                         <option value="normal">Normal</option>
                         <option value="dificil">Difícil</option>
                         <option value="chucknorris">Chuck Norris</option>
-                    </select>
-                   </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="d-flex justify-content-center">
-                   <div class="mb-2">
-                    <select class="form-control" id="temp" >
-                        <option value="">--Selecione o Tempo --</option>
-                        <option value="t1">15s</option>
-                        <option value="t2">30s</option>
-                        <option value="t3">60s</option>
                     </select>
                    </div>
                 </div>
